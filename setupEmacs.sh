@@ -1,7 +1,6 @@
 #!/bin/bash
 
-git clone https://git.savannah.gnu.org/git/emacs.git
-cd ./emacs
+cd ./emacs-24.3
 git checkout emacs-24.3
 
 source ./autogen.sh
@@ -10,4 +9,4 @@ tar --create --file emacs-24.3.tar.gz ./emacs-24.3/
 mv emacs-24.3.tar.gz ./rpmbuild/SOURCES/
 
 cd ./rpmbuild/
-rpmbuild --define "_topdir `pwd`" -v -bb SPECS/emacs.spec
+rpmbuild --define "_topdir `pwd`" -v -bb SPECS/emacs-24.3.spec

@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo yum -y install \
+    python-devel \
     GConf2-devel \
     Xaw3d-devel \
     dbus-devel \
@@ -12,8 +13,8 @@ sudo yum -y install \
     gpm-devel \
     gtk+-devel \
     gtk2-devel \
-        ImageMagick \
-        ImageMagick-devel \
+    ImageMagick \
+    ImageMagick-devel \
     jansson-devel \
     libX11-devel \
     libXft-devel \
